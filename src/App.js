@@ -38,6 +38,7 @@ function App() {
           menuPlacement="auto"
           options={stationOptions}
           value={formik.values.Select}
+          menuPortalTarget={document.body}
           styles={customStyles}
           onChange={(selectedOptions) => {
             formik.setFieldValue("Select", selectedOptions);
